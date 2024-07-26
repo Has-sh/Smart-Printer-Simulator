@@ -22,7 +22,7 @@ This project simulates a smart printer system that manages and processes print j
 To compile the program, run:
 
 ```sh
-gcc -o smart_printer main.c queue.c
+gcc -o SmartPrinterSimulator SmartPrinterSimulator.c queue.h
 ```
 
 ### Running the Program
@@ -30,13 +30,13 @@ gcc -o smart_printer main.c queue.c
 To run the program, use the following command:
 
 ```sh
-./smart_printer <number_of_jobs> <number_of_printers> <max_arrival_time> <max_service_time>
+./SmartPrinterSimulator <number_of_jobs> <number_of_printers> <max_arrival_time> <max_service_time>
 ```
 
 For example:
 
 ```sh
-./smart_printer 10 3 20 5
+./SmartPrinterSimulator 10 3 20 5
 ```
 
 This command runs the simulation with 10 jobs, 3 printers, a maximum arrival time of 20 units, and a maximum service time of 5 units.
